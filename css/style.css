@@ -1,0 +1,96 @@
+:root{
+    --primary-text-color: #2E2F42;
+    --background-color: #ffffff;
+    --background-button-color:#F4F4FD;
+    --text-button-color: #4D5AE5;
+    --description-text-color: #434455;
+}
+*{
+    text-decoration: none;
+}
+
+.list{
+list-style: none;
+}
+
+body {
+ color: var(--primary-text-color);
+ background-color: var(--background-color);
+ font-family: 'Roboto', sans-serif;
+ font-size: 16px;
+ line-height: 1.5;
+ letter-spacing: 0.02em;
+
+}
+
+
+/* Стилізація хедеру */ 
+.logo-web{
+    color: var(--text-button-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.67;
+
+}
+
+.logo-studio{
+    color: var(--primary-text-color);
+    font-family: 'Raleway', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.03em;
+    line-height: 1.67;
+}
+
+.nav-link{
+    color: var(--primary-text-color);
+    font-weight: 700;
+}
+
+.contact-link{
+    color: var(--description-text-color);
+
+}
+
+
+/* Стилізація фільтру */
+
+h1{
+    display: none;
+}
+.filter-button{
+    background-color: var(--background-button-color);
+    color: var(--text-button-color);
+    font-weight: 700;
+}
+
+.filter-button:hover,
+.filter-button:focus{
+    background-color: var(--text-button-color);
+    color: var(--background-button-color);
+    cursor: pointer;
+    font-weight: 700;
+}
+
+
+/* Стилізація карточок */
+a>h2{
+    color: var(--primary-text-color); 
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.8;
+}
+
+.product-description{
+    color: var(--description-text-color);
+}
+
+.benefits{
+    color: var(--background-button-color);
+}
+/* Стилізація футеру */
+.footer-text{
+    color: #E7E9FC;
+}
