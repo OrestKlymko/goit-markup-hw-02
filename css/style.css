@@ -25,7 +25,7 @@ body {
 
 
 /* Стилізація хедеру */ 
-.logo-web{
+.logo{
     color: var(--text-button-color);
     font-family: 'Raleway', sans-serif;
     font-size: 18px;
@@ -49,21 +49,34 @@ body {
     font-weight: 700;
 }
 
+.nav-link:hover,
+.nav-link:focus{
+    color: var(--text-button-color);
+    font-weight: 700;
+}
+
 .contact-link{
     color: var(--description-text-color);
 
 }
 
+.contact-link:hover,
+.contact-link:focus{
+    font-weight: 700;
+}
+
 
 /* Стилізація фільтру */
 
-h1{
+.products{
     display: none;
 }
 .filter-button{
     background-color: var(--background-button-color);
     color: var(--text-button-color);
     font-weight: 700;
+    border: 1px;
+    border-radius: 4px;
 }
 
 .filter-button:hover,
@@ -72,11 +85,23 @@ h1{
     color: var(--background-button-color);
     cursor: pointer;
     font-weight: 700;
+    border: 1px;
+    border-radius: 4px;
+}
+
+
+.active-button{
+    background-color: var(--text-button-color);
+    color: var(--background-button-color);
+    cursor: pointer;
+    font-weight: 700;
+    border: 1px;
+    border-radius: 4px;
 }
 
 
 /* Стилізація карточок */
-a>h2{
+.topics{
     color: var(--primary-text-color); 
     font-weight: 700;
     font-size: 20px;
