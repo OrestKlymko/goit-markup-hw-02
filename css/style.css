@@ -107,6 +107,19 @@ body {
     font-size: 20px;
     line-height: 1.8;
 }
+.benefits{
+visibility: hidden;
+}
+
+.product-card:hover .benefits {
+visibility: visible;
+background-color: #4D5AE5;
+}
+
+.product-card:hover .image {
+    display: none;
+    }
+
 
 .product-description{
     color: var(--description-text-color);
