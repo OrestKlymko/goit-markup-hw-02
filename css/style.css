@@ -31,7 +31,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.03em;
-    line-height: 1.67;
+    line-height: 1.33;
 
 }
 
@@ -41,7 +41,7 @@ body {
     font-size: 18px;
     font-weight: 700;
     letter-spacing: 0.03em;
-    line-height: 1.67;
+    line-height: 1.33;
 }
 
 .nav-link{
@@ -62,7 +62,7 @@ body {
 
 .contact-link:hover,
 .contact-link:focus{
-    font-weight: 700;
+    color: var(--text-button-color);
 }
 
 
@@ -111,15 +111,6 @@ body {
 visibility: hidden;
 }
 
-.product-card:hover .benefits {
-visibility: visible;
-background-color: #4D5AE5;
-}
-
-.product-card:hover .image {
-    display: none;
-    }
-
 
 .product-description{
     color: var(--description-text-color);
@@ -129,6 +120,12 @@ background-color: #4D5AE5;
     color: var(--background-button-color);
 }
 /* Стилізація футеру */
+.footer{
+    background-color: var(--primary-text-color);
+}
+.footer .logo-studio{
+    color: var(--background-button-color);
+}
 .footer-text{
     color: #E7E9FC;
 }
