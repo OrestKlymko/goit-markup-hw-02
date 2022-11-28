@@ -100,8 +100,30 @@ body {
 }
 
 
+.order-button{
+    background-color: var(--text-button-color);
+    color: var(--background-color);
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+
+}
+
+.order-button:hover,
+.order-button:focus{
+    background-color: var(--background-button-color);
+    color: var(--text-button-color);
+    font-weight: 700;
+    line-height: 1.19;
+    letter-spacing: 0.04em;
+    border-radius: 4px;
+}
+
 /* Стилізація карточок */
-.topics{
+.topics,
+.advantage,
+.member{
     color: var(--primary-text-color); 
     font-weight: 700;
     font-size: 20px;
@@ -111,8 +133,16 @@ body {
 visibility: hidden;
 }
 
+.name-section{
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.11;
+    text-align: center;
+}
 
-.product-description{
+.product-description,
+.advantage-descrip,
+.member-work{
     color: var(--description-text-color);
 }
 
@@ -128,4 +158,26 @@ visibility: hidden;
 }
 .footer-text{
     color: #E7E9FC;
+}
+
+
+.hero{
+    background-color: var(--primary-text-color);
+}
+
+.hero-name{
+    color: var(--background-color);
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 1.07;
+    text-align: center;
+}
+
+.team{
+    background-color: var(--background-button-color);
+}
+
+.team-card
+{
+    background-color: var(--background-color);
 }
