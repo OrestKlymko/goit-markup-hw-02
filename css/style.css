@@ -4,6 +4,7 @@
     --background-button-color:#F4F4FD;
     --text-button-color: #4D5AE5;
     --description-text-color: #434455;
+    --border-collor:#E7E9FC;
 }
 *{
     text-decoration: none;
@@ -18,9 +19,6 @@ body {
  background-color: var(--background-color);
  font-family: 'Roboto', sans-serif;
  font-size: 16px;
- line-height: 1.5;
- letter-spacing: 0.02em;
-
 }
 
 
@@ -32,6 +30,7 @@ body {
     font-weight: 700;
     letter-spacing: 0.03em;
     line-height: 1.33;
+    text-transform: uppercase;
 
 }
 
@@ -47,22 +46,30 @@ body {
 .nav-link{
     color: var(--primary-text-color);
     font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .nav-link:hover,
 .nav-link:focus{
     color: var(--text-button-color);
     font-weight: 700;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 .contact-link{
     color: var(--description-text-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 
 }
 
 .contact-link:hover,
 .contact-link:focus{
     color: var(--text-button-color);
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 
@@ -75,8 +82,10 @@ body {
     background-color: var(--background-button-color);
     color: var(--text-button-color);
     font-weight: 700;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-collor);
     border-radius: 4px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 .filter-button:hover,
@@ -85,8 +94,10 @@ body {
     color: var(--background-button-color);
     cursor: pointer;
     font-weight: 700;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-collor);
     border-radius: 4px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 
@@ -95,8 +106,10 @@ body {
     color: var(--background-button-color);
     cursor: pointer;
     font-weight: 700;
-    border: 1px solid #E7E9FC;
+    border: 1px solid var(--border-collor);
     border-radius: 4px;
+    line-height: 1.5;
+    letter-spacing: 0.04em;
 }
 
 
@@ -127,20 +140,15 @@ body {
     color: var(--primary-text-color); 
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.8;
+    line-height: 1.2;
+    letter-spacing: 0.02em;
 }
-.benefits{
-visibility: hidden;
-}
-<<<<<<< Updated upstream
-=======
-
->>>>>>> Stashed changes
 
 .name-section{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
+    letter-spacing: 0.02em;
     text-align: center;
 }
 
@@ -148,26 +156,39 @@ visibility: hidden;
 .advantage-descrip,
 .member-work{
     color: var(--description-text-color);
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
-.benefits{
-    color: var(--background-button-color);
+
+
+.hero,
+.footer{
+    background-color: var(--primary-text-color);
 }
-/* Стилізація футеру */
 .footer{
     background-color: var(--primary-text-color);
 }
 .footer .logo-studio{
     color: var(--background-button-color);
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 1.67;
+    letter-spacing: 0.03em;
 }
 .footer-text{
-    color: #E7E9FC;
+    color: var(--border-collor);
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.5;
+    letter-spacing: 0.02em;
 }
 
 
-.hero{
-    background-color: var(--primary-text-color);
-}
+
 
 .hero-name{
     color: var(--background-color);
@@ -175,6 +196,7 @@ visibility: hidden;
     font-size: 56px;
     line-height: 1.07;
     text-align: center;
+    letter-spacing: 0.02em;
 }
 
 .team{
