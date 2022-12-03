@@ -14,25 +14,30 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header>
-      <nav>
+    <header class="header">
+      <nav class="navigation">
         <a href="./index.html" class="logo">
-          WEB<span class="logo-studio">STUDIO</span>
+          Web<span class="logo-studio">Studio</span>
         </a>
+
         <ul class="nav list">
-          <li><a href="./index.html" class="nav-link">Studio</a></li>
-          <li><a href="./portfolio.html" class="nav-link">Portfolio</a></li>
-          <li><a href="#" class="nav-link">Contacts</a></li>
+          <li class="nav-list">
+            <a href="./index.html" class="nav-link">Studio</a>
+          </li>
+          <li class="nav-list">
+            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          </li>
+          <li class="nav-list"><a href="#" class="nav-link">Contacts</a></li>
         </ul>
       </nav>
 
       <ul class="contact list">
-        <li>
+        <li class="contact-list">
           <a class="contact-link" href="mailto:info@devstudio.com"
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="contact-list">
           <a class="contact-link" href="tel:+110001111111"
             >+11 (000) 111-11-11</a
           >
@@ -41,114 +46,144 @@
     </header>
 
     <main>
-      <section>
-        <h1 class="products">Product cards</h1>
-        <ul class="filter list">
-          <li><button class="active-button" type="button">All</button></li>
-          <li><button class="filter-button" type="button">Web Site</button></li>
-          <li><button class="filter-button" type="button">App</button></li>
-          <li><button class="filter-button" type="button">Design</button></li>
-          <li>
-            <button class="filter-button" type="button">Marketing</button>
-          </li>
-        </ul>
+      <div class="container">
+        <section class="product-section">
+          <h1 class="products">Product cards</h1>
+          <ul class="filter list">
+            <li><button class="active-button" type="button">All</button></li>
+            <li>
+              <button class="filter-button" type="button">Web Site</button>
+            </li>
+            <li><button class="filter-button" type="button">App</button></li>
+            <li><button class="filter-button" type="button">Design</button></li>
+            <li>
+              <button class="filter-button" type="button">Marketing</button>
+            </li>
+          </ul>
 
-        <ul class="product list">
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_4.jpg" alt="bankapp" width="360" />
-              </div>
-              <h2 class="topics">Banking App Interface Concept</h2>
-              <p class="product-description">App</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_13.jpg" alt="cash" width="360" />
-              </div>
-              <h2 class="topics">Cashless Payment</h2>
-              <p class="product-description">Marketing</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_6.jpg" alt="Meditaion" width="360" />
-              </div>
-              <h2 class="topics">Meditaion App</h2>
-              <p class="product-description">App</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_7.jpg" alt="Taxi" width="360" />
-              </div>
-              <h2 class="topics">Taxi Service</h2>
-              <p class="product-description">Marketing</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_8.jpg" alt="Screen" width="360" />
-              </div>
-              <h2 class="topics">Screen Illustrations</h2>
-              <p class="product-description">Design</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_9.jpg" alt="Courses" width="360" />
-              </div>
-              <h2 class="topics">Online Courses</h2>
-              <p class="product-description">Marketing</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_10.jpg" alt="Instagram Stories"
-                width="360" />
-              </div>
-              <h2 class="topics">Instagram Stories Concept</h2>
-              <p class="product-description">Design</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_11.jpg" alt="Organic food" width="360" />
-              </div>
-              <h2 class="topics">Organic Food</h2>
-              <p class="product-description">Web Site</p>
-            </a>
-          </li>
-          <li class="product-card">
-            <a href="#">
-              <div class="image">
-                <img src="./images/img_12.jpg" alt="Fresh Coffee" width="360" />
-              </div>
-              <h2 class="topics">Fresh Coffee</h2>
-              <p class="product-description">Web Site</p>
-            </a>
-          </li>
-        </ul>
-      </section>
+          <ul class="product list">
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_4.jpg" alt="bankapp" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Banking App Interface Concept</h2>
+                  <p class="product-description">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_13.jpg" alt="cash" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Cashless Payment</h2>
+                  <p class="product-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_6.jpg" alt="Meditaion" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Meditaion App</h2>
+                  <p class="product-description">App</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_7.jpg" alt="Taxi" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Taxi Service</h2>
+                  <p class="product-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_8.jpg" alt="Screen" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Screen Illustrations</h2>
+                  <p class="product-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_9.jpg" alt="Courses" width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Online Courses</h2>
+                  <p class="product-description">Marketing</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img src="./images/img_10.jpg" alt="Instagram Stories"
+                  width="360" />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Instagram Stories Concept</h2>
+                  <p class="product-description">Design</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img
+                    src="./images/img_11.jpg"
+                    alt="Organic food"
+                    width="360"
+                  />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Organic Food</h2>
+                  <p class="product-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+            <li class="product-card">
+              <a href="#">
+                <div class="image">
+                  <img
+                    src="./images/img_12.jpg"
+                    alt="Fresh Coffee"
+                    width="360"
+                  />
+                </div>
+                <div class="description-text">
+                  <h2 class="topics">Fresh Coffee</h2>
+                  <p class="product-description">Web Site</p>
+                </div>
+              </a>
+            </li>
+          </ul>
+        </section>
+      </div>
     </main>
     <footer class="footer">
-      <p>
+      <div class="container-footer">
         <a href="./index.html" class="logo">
-          WEB<span class="logo-studio">STUDIO</span>
+          Web<span class="logo-studio">Studio</span>
         </a>
-      </p>
-      <p class="footer-text">
-        Increase the flow of customers and sales for your business with digital
-        marketing & growth solutions.
-      </p>
+        <p class="footer-text">
+          Increase the flow of customers and sales for your business with
+          digital marketing & growth solutions.
+        </p>
+      </div>
     </footer>
   </body>
 </html>
