@@ -12,45 +12,51 @@
       rel="stylesheet"
     />
     <link rel="stylesheet" href="./css/style.css" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css" integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/modern-normalize/1.1.0/modern-normalize.min.css"
+      integrity="sha512-wpPYUAdjBVSE4KJnH1VR1HeZfpl1ub8YT/NKx4PuQ5NmX2tKuGu6U/JRp5y+Y8XG2tV+wKQpNHVUX03MfMFn9Q=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
   </head>
   <body>
     <header class="header">
       <div class="container">
-      <nav class="navigation">
-        <a href="./index.html" class="logo">
-          Web<span class="logo-studio">Studio</span>
-        </a>
+        <nav class="navigation">
+          <a href="./index.html" class="logo">
+            Web<span class="logo-studio">Studio</span>
+          </a>
 
-        <ul class="nav list">
-          <li class="nav-list">
-            <a href="./index.html" class="nav-link">Studio</a>
+          <ul class="nav list">
+            <li class="nav-list">
+              <a href="./index.html" class="nav-link">Studio</a>
+            </li>
+            <li class="nav-list">
+              <a href="./portfolio.html" class="nav-link">Portfolio</a>
+            </li>
+            <li class="nav-list"><a href="#" class="nav-link">Contacts</a></li>
+          </ul>
+        </nav>
+
+        <ul class="contact list">
+          <li class="contact-list">
+            <a class="contact-link" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
           </li>
-          <li class="nav-list">
-            <a href="./portfolio.html" class="nav-link">Portfolio</a>
+          <li class="contact-list">
+            <a class="contact-link" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
           </li>
-          <li class="nav-list"><a href="#" class="nav-link">Contacts</a></li>
         </ul>
-      </nav>
-
-      <ul class="contact list">
-        <li class="contact-list">
-          <a class="contact-link" href="mailto:info@devstudio.com"
-            >info@devstudio.com</a
-          >
-        </li>
-        <li class="contact-list">
-          <a class="contact-link" href="tel:+110001111111"
-            >+11 (000) 111-11-11</a
-          >
-        </li>
-      </ul>
-    </div>
+      </div>
     </header>
 
     <main>
-        <section class="product-section">
-          <div class="container">
+      <section class="product-section section">
+        <div class="container">
           <h1 class="products">Product cards</h1>
           <ul class="filter list">
             <li><button class="active-button" type="button">All</button></li>
@@ -134,8 +140,11 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_10.jpg" alt="Instagram Stories"
-                  width="360" />
+                  <img
+                    src="./images/img_10.jpg"
+                    alt="Instagram Stories"
+                    width="360"
+                  />
                 </div>
                 <div class="description-text">
                   <h2 class="topics">Instagram Stories Concept</h2>
@@ -174,18 +183,53 @@
               </a>
             </li>
           </ul>
-        </section>
-      </div>
+        </div>
+      </section>
     </main>
     <footer class="footer">
       <div class="container">
-        <a href="./index.html" class="logo">
-          Web<span class="logo-studio">Studio</span>
-        </a>
-        <p class="footer-text">
-          Increase the flow of customers and sales for your business with
-          digital marketing & growth solutions.
-        </p>
+        <div class="footer-main-text">
+          <a href="./index.html" class="logo">
+            Web<span class="logo-studio">Studio</span>
+          </a>
+          <p class="footer-text">
+            Increase the flow of customers and sales for your business with
+            digital marketing & growth solutions.
+          </p>
+        </div>
+        <div class="social-footer">
+          <span class="social-text-footer">Social media</span>
+          <ul class="icon-style">
+            <li class="footer-list-text">
+              <a class="icon-social" href="instagram.com">
+                <svg class="social" width="16px" height="16px">
+                  <use href="./images/sprite.svg#icon-instagram-2"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-text">
+              <a class="icon-social" href="twitter.com">
+                <svg class="social" width="16px" height="16px">
+                  <use href="./images/sprite.svg#icon-twitter-1"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-text">
+              <a class="icon-social" href="facebook.com">
+                <svg class="social" width="16px" height="16px">
+                  <use href="./images/sprite.svg#icon-facebook"></use>
+                </svg>
+              </a>
+            </li>
+            <li class="footer-list-text">
+              <a class="icon-social" href="linkedin.com">
+                <svg class="social" width="16px" height="16px">
+                  <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </div>
       </div>
     </footer>
   </body>
