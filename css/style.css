@@ -7,6 +7,7 @@
     --border-collor:#E7E9FC;
     --border-card-collor:rgba(46, 47, 66, 0.08);
     --border-card-active:rgba(46, 47, 66, 0.16);
+    --order-button-hover: #404BBF;
     
 }
 
@@ -116,7 +117,7 @@ padding-top:96px;
 
 .icon-social{
  
-     display: block;
+
      height: 40px;
      width: 40px;
      background-color: var(--text-button-color);
@@ -249,6 +250,8 @@ body {
     font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.02em;
+
+    cursor: pointer;
 }
 
 .contact-link{
@@ -305,8 +308,8 @@ body {
 .filter-button:focus{
     background-color: var(--text-button-color);
     color: var(--background-button-color);
-    border: 1px solid var(--border-collor);
-    border-radius: 4px;
+    border: 1px solid transparent;
+
     cursor: pointer;
 
 
@@ -349,6 +352,7 @@ body {
     color: var(--background-color);
     border-radius: 4px;
     border-color: transparent;
+    box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 
 
     font-weight: 700;
@@ -357,19 +361,23 @@ body {
     
     padding: 16px 32px;
 
+
+
 }
 
 .order-button:hover,
 .order-button:focus{
    
-    background-color: var(--background-button-color);
-    color: var(--text-button-color);
-    border-radius: 4px;
+    color: var(--background-color);
+    background-color: var(--order-button-hover);
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 
 
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.04em;
+
+    cursor: pointer;
     
 }
 
@@ -467,9 +475,11 @@ body {
     margin-right: 0;
 }
 
-.company-list:hover{
+.company-list:hover,
+.company-list:focus{
     fill: var(--text-button-color);
     border: 1px solid var(--text-button-color);
+    cursor: pointer;
 }
 
 
@@ -542,8 +552,10 @@ margin-right: 0;
     background-color: rgba(255, 255, 255, 0.1);;
 }
 
-.footer .icon-social:hover{
+.footer .icon-social:hover,
+.footer .icon-social:focus{
     background-color: #31D0AA;
+    cursor: pointer;
 }
 
 
