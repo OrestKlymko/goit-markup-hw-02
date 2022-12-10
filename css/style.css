@@ -98,8 +98,64 @@ padding-top:96px;
     padding-right: 15px;
 
 }
+.backdrop.is-hidden{
+    opacity: 0;
+    pointer-events: none;
+}
+
+.backdrop{
+    position: fixed;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
 
 
+    background: rgba(46, 47, 66, 0.4);
+
+}
+
+.modal{
+
+
+    min-width: 408px;
+    min-height: 576px;
+    position: absolute;
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    background-color: #FCFCFC;
+
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    
+
+}
+
+.close-button{
+    display: flex;
+    width: 24px;
+    height: 24px;
+    margin-top: 24px;
+    margin-right: 24px;
+    margin-left: auto;
+    border-radius: 50%;
+    background-color: #E7E9FC;
+    border: none;
+    cursor: pointer;
+
+
+    align-items: center;
+    justify-content:center;
+}
+
+
+.cancel{
+    width: 8px;
+    height: 8px;
+    fill:#000000
+
+}
 
 .icon{
 
@@ -650,14 +706,15 @@ margin-right: 0;
     margin-right: 24px; 
     margin-bottom: 48px;
     border: 0.5px solid var(--background-button-color);
-    margin-right: auto;
-
     box-shadow: 0px 1px 6px var(--border-card-collor);
+    margin-right: auto;
 }
 
-.product-card:nth-child(2){
+.product-card:hover,
+.product-card:focus{
     box-shadow: 0px 1px 6px var(--border-card-collor), 0px 1px 1px var(--border-card-active), 0px 2px 1px var(--border-card-collor);
 }
+
 
 .product-card:nth-child(3n){
     margin-right: 0;
