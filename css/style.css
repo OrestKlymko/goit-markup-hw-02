@@ -790,7 +790,9 @@ margin-right: 0;
 .doing-image{
     margin-left: 24px;
 }
-
+.doing-image:first-child{
+    margin-left: 0;
+}
 
 .team-card,
 .product-card{
