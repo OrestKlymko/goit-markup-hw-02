@@ -982,18 +982,20 @@ margin-left: auto;
     border: 1.25px solid #2E2F42;
     border-radius: 2px;
 }
+.privacy-text{
+    display: inline-block;
+}
 
-.privacy-flex{
+.privacy{
     display: flex;
     align-items: center;
 }
 
 
-
 .inpute-checkbox:checked + .icon-check {
 
     background-color: var(--text-button-color);
-    background-image: url('./images/Checkbox.svg');
+    background-image: url('/images/Checkbox.svg');
     background-origin: border-box;
     border: 1.25px solid var(--text-button-color);
 

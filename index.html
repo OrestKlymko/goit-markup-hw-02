@@ -76,15 +76,15 @@
                 </svg>
               </button>
 
-              <form>
-                <div class="form">
+              <form class="form">
+               
                   <p class="cta">
                     Leave your contacts and we will call you back
                   </p>
                   <div class="form-field">
                     <label for="name">Name</label>
                     <div class="form-data">
-                      <input type="name" id="name" class="form-input-data"/>
+                      <input name="person" type="name" id="name" class="form-input-data"/>
                       <svg class="form-image">
                         <use href="./images/sprite.svg#icon-person-black"></use>
                       </svg>
@@ -94,7 +94,7 @@
                   <div class="form-field">
                     <label for="phone">Phone</label>
                     <div class="form-data">
-                    <input class="form-input-data" type="tel" id="phone" />
+                    <input name="phone" class="form-input-data" type="tel" id="phone" />
                     <svg class="form-image">
                         <use href="./images/sprite.svg#icon-phone-black"></use>
                       </svg>
@@ -103,7 +103,7 @@
                   <div class="form-field">
                     <label for="email">Email</label>
                     <div class="form-data">
-                    <input class="form-input-data" type="email" id="email" />
+                    <input name="email" class="form-input-data" type="email" id="email" />
                     <svg class="form-image">
                         <use href="./images/sprite.svg#icon-email-black"></use>
                       </svg>
@@ -112,7 +112,7 @@
                   <div class="form-field">
                     <label for="comment">Comment</label>
                     <textarea
-                      name=""
+                      name="comment"
                       id="comment"
                       rows="6"
                       placeholder="Text input"
@@ -121,7 +121,6 @@
                   <div class="form-field checkbox">
                   
                       <label for="privacy" class="privacy">
-                        <div class="privacy-flex">
                     <input
                     id="privacy"
                       type="checkbox"
@@ -129,13 +128,10 @@
                       value=""
                       class="inpute-checkbox"
                     />
-                    
                     <span class="icon-check"></span>
-                      <span class="privacy-text">I accept the terms and conditions of the
-                      <a href="google.com" class="link-privacy">Privacy Policy</a></span>
-                    </div>
-                    </div>
-                  </label>  
+                    <span class="privacy-text">I accept the terms and conditions of the
+                      <a href="google.com" class="link-privacy">Privacy Policy</a></span> 
+                      </label> 
                   </div>
                   <div class="button-submit">
                     <button type="submit" class="button-form">Send</button>
@@ -477,6 +473,7 @@
           <span class="social-text-footer">Subscribe</span>
           <div class="input-button">
             <input
+            name="subscription"
               type="email"
               id="sub-mail"
               placeholder="E-mail"
