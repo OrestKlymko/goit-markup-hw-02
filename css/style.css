@@ -986,7 +986,7 @@ margin-left: auto;
     display: inline-block;
 }
 
-.privacy{
+.checkbox .privacy{
     display: flex;
     align-items: center;
 }
