@@ -58,15 +58,16 @@
     <main>
       <!--Hero block-->
       <section class="hero section">
-        <div class="container">
+        <div class="container hero-section">
           <h1 class="hero-name">
             Effective Solutions<br />
             for Your Business
           </h1>
-          <button data-modal-open type="button" class="order-button">
-            Order Service
-          </button>
-
+          <div class="start-button">
+            <button data-modal-open type="button" class="order-button">
+              Order Service
+            </button>
+          </div>
           <div class="backdrop is-hidden" data-modal>
             <div class="modal">
               <button class="close-button" data-modal-close>
@@ -74,6 +75,68 @@
                   <use href="./images/sprite.svg#icon-Vector-1"></use>
                 </svg>
               </button>
+
+              <form>
+                <div class="form">
+                  <p class="cta">
+                    Leave your contacts and we will call you back
+                  </p>
+                  <div class="form-field">
+                    <label for="name">Name</label>
+                    <div class="form-data">
+                      <input type="name" id="name" class="form-input-data"/>
+                      <svg class="form-image">
+                        <use href="/images/sprite.svg#icon-person-black"></use>
+                      </svg>
+                    </div>
+                  </div>
+
+                  <div class="form-field">
+                    <label for="phone">Phone</label>
+                    <div class="form-data">
+                    <input class="form-input-data" type="tel" id="phone" />
+                    <svg class="form-image">
+                        <use href="/images/sprite.svg#icon-phone-black"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="email">Email</label>
+                    <div class="form-data">
+                    <input class="form-input-data" type="email" id="email" />
+                    <svg class="form-image">
+                        <use href="/images/sprite.svg#icon-email-black"></use>
+                      </svg>
+                    </div>
+                  </div>
+                  <div class="form-field">
+                    <label for="comment">Comment</label>
+                    <textarea
+                      name=""
+                      id="comment"
+                      rows="6"
+                      placeholder="Text input"
+                    ></textarea>
+                  </div>
+                  <div class="form-field checkbox">
+                    <input
+                      type="checkbox"
+                      name="checkbox"
+                      value="accept"
+                      class="inpute-checkbox"
+                    />
+                    <label for="privacy" class="privacy"
+                      >I accept the terms and conditions of the
+                      <a href="google.com" class="link-privacy"
+                        >Privacy Policy</a
+                      ></label
+                    >
+                  </div>
+                  <div class="button-submit">
+                    <button type="submit" class="button-form">Send</button>
+                  </div>
+                </div>
+              </form>
             </div>
           </div>
         </div>
@@ -406,7 +469,25 @@
             </li>
           </ul>
         </div>
+        <form class="footer-form">
+          <span class="social-text-footer">Subscribe</span>
+          <div class="input-button">
+            <input
+              type="email"
+              id="sub-mail"
+              placeholder="E-mail"
+              class="sub-input"
+            />
+            <button type="submit" class="sub-button">
+              Subscribe
+              <svg class="send-icon" width="24px" height="24px">
+                <use href="./images/sprite.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
-    </footer><script src="./js/modal.js"></script>
+    </footer>
+    <script src="./js/modal.js"></script>
   </body>
 </html>
