@@ -59,12 +59,7 @@ img{
     margin-top: 8px;
 }
 
-.section{
-    padding-top: 120px;
-    padding-bottom: 120px;
-    padding-left: 15px;
-    padding-right: 15px;
-}
+
 .product-section{
 padding-top:96px;
 
@@ -74,9 +69,7 @@ padding-top:96px;
 }
 
 .hero{
-    padding-top: 192px;
-    padding-bottom: 192px;
-
+  
     height: 603px;
     width: 1440px;
     margin-left: auto;
@@ -92,6 +85,25 @@ padding-top:96px;
    
 }
 
+.hero .container{
+    padding: 0;
+}
+
+.our-advantages .container{
+    padding-bottom: 0;
+}
+
+
+.product-section .container{
+    padding-top: 0;
+}
+
+.hero-section{
+    padding-top: 192px;
+    padding-bottom: 192px;
+    
+}
+
 
 .container{
     margin-left: auto;
@@ -100,8 +112,15 @@ padding-top:96px;
     padding-left: 15px;
     padding-right: 15px;
 
+
+    padding-top: 120px;
+    padding-bottom: 120px;
+
 }
-.backdrop.is-hidden{
+
+
+
+.backdrop.is-hidden {
     opacity: 0;
     pointer-events: none;
 }
@@ -321,6 +340,7 @@ body {
 }
 .nav-link{
     position: relative;
+
 }
 
 .nav-link.portfolio::after {
@@ -385,6 +405,7 @@ body {
 
 .header .container{
     display: flex;
+    padding: 0;
 }
 
 .nav-link:hover,
@@ -622,8 +643,8 @@ body {
     padding-right: 16px;
 }
 
-.hero,
-.footer{
+.hero
+{
     background-color: var(--primary-text-color);
 
 
@@ -634,7 +655,13 @@ body {
 }
 
 
-
+.footer{
+    
+            background-color: var(--primary-text-color);
+    
+    
+    
+}
 
 
 .company{
@@ -789,9 +816,13 @@ margin-right: 0;
     text-align: center;
 }
 
-.team{
+.team {
     background-color: var(--background-button-color);
 }
+
+
+
+
 
 
 .doing-card{
@@ -1100,5 +1131,17 @@ textarea::placeholder{
     padding-left: 34px;
     padding-top: 11px;
     padding-bottom: 11px;
+}
+
+
+
+@media screen and (min-width:428px) and (max-width:767px) {
+    .container{
+        width: 428px;
+    }
+
+
+
+    
 }
 
