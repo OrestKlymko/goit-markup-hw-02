@@ -23,11 +23,21 @@
   <body>
     <header class="header">
       <div class="container">
-        <nav class="navigation">
+        <div class="mobile-container">
           <a href="./index.html" class="logo">
             Web<span class="logo-studio">Studio</span>
           </a>
+          <button type="button" class="menu-button is-open js-open-menu " aria-expanded="false" data-menu>
+            <svg class="burger" aria-label="Переключатель меню">
+                  <use class="icon-burger" href="./images/sprite.svg#burger"></use>
+                  <use class="icon-cross" href="./images/sprite.svg#icon-Vector-1"></use>
+        </svg>
+        </button>
+        </div>
 
+ <div class="mobile-header js-menu-container">
+
+          <nav class="navigation">
           <ul class="nav list">
             <li class="nav-list">
               <a href="./index.html" class="nav-link">Studio</a>
@@ -37,13 +47,12 @@
                 >Portfolio</a
               >
             </li>
-            <li class="nav-list"><a href="#" class="nav-link">Contacts</a></li>
+            <li class="nav-list"><a href="#" class="nav-link ini-menu">Contacts</a></li>
           </ul>
         </nav>
-
         <ul class="contact list">
           <li class="contact-list">
-            <a class="contact-link" href="mailto:info@devstudio.com"
+            <a class="contact-link active-mail" href="mailto:info@devstudio.com"
               >info@devstudio.com</a
             >
           </li>
@@ -53,6 +62,54 @@
             >
           </li>
         </ul>
+
+
+<div class="contact-page mobile is-hidden contact-container" >
+         <ul class="contact-mobile list">
+                    <li class="contact-list-mobile">
+            <a class="contact-link-mobile active-phone" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="contact-list-mobile">
+            <a class="contact-link-mobile" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+         <ul class="icon-style">
+                  <li class="icon-list">
+                    <a class="icon-social" href="instagram.com">
+                      <svg class="social" width="16px" height="16px">
+                        <use href="./images/sprite.svg#icon-instagram-2"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list">
+                    <a class="icon-social" href="twitter.com">
+                      <svg class="social" width="16px" height="16px">
+                        <use href="./images/sprite.svg#icon-twitter-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list">
+                    <a class="icon-social" href="facebook.com">
+                      <svg class="social" width="16px" height="16px">
+                        <use href="./images/sprite.svg#icon-facebook"></use>
+                      </svg>
+                    </a>
+                  </li>
+                  <li class="icon-list">
+                    <a class="icon-social" href="linkedin.com">
+                      <svg class="social" width="16px" height="16px">
+                        <use href="./images/sprite.svg#icon-linkedin-1"></use>
+                      </svg>
+                    </a>
+                  </li>
+                </ul>
+  </div>
+    </div>
+    
       </div>
     </header>
 
@@ -61,13 +118,13 @@
         <div class="container">
           <h1 class="products">Product cards</h1>
           <ul class="filter list">
-            <li><button class="active-button" type="button">All</button></li>
-            <li>
+            <li class="filter-type"><button class="active-button" type="button">All</button></li>
+            <li class="filter-type">
               <button class="filter-button" type="button">Web Site</button>
             </li>
-            <li><button class="filter-button" type="button">App</button></li>
-            <li><button class="filter-button" type="button">Design</button></li>
-            <li>
+            <li class="filter-type"><button class="filter-button" type="button">App</button></li>
+            <li class="filter-type"><button class="filter-button" type="button">Design</button></li>
+            <li class="filter-type">
               <button class="filter-button" type="button">Marketing</button>
             </li>
           </ul>
@@ -76,7 +133,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_4.jpg" alt="bankapp" width="360" />
+                  <img  srcset="./images/img.jpg 1x, ./images/img@2x.jpg 2x" src="./images/img.jpg" alt="bankapp" width="360" />
                   <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -95,7 +152,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_13.jpg" alt="cash" width="360" />
+                  <img  srcset="./images/img-2.jpg 1x, ./images/img@2x-2.jpg" src="./images/img-2.jpg" alt="cash" width="360" />
                   <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -113,7 +170,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_6.jpg" alt="Meditaion" width="360" />
+                  <img  srcset="./images/img-3.jpg 1x, ./images/img@2x-3.jpg 2x" src="./images/img-3.jpg" alt="Meditaion" width="360" />
                   <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -131,7 +188,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_7.jpg" alt="Taxi" width="360" />
+                  <img  srcset="./images/img-4.jpg 1x, ./images/img@2x-4.jpg 2x" src="./images/img-4.jpg" alt="Taxi" width="360" />
                  <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -149,7 +206,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_8.jpg" alt="Screen" width="360" />
+                  <img  srcset="./images/img-5.jpg 1x, ./images/img@2x-5.jpg 2x" src="./images/img-5.jpg" alt="Screen" width="360" />
                   <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -167,7 +224,7 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img src="./images/img_9.jpg" alt="Courses" width="360" />
+                  <img  srcset="./images/img-6.jpg 1x, ./images/img@2x-6.jpg" src="./images/img-6.jpg" alt="Courses" width="360" />
                   <div class="overlay-text">
                   <p>
                     14 Stylish and User-Friendly App Design Concepts · Task
@@ -185,8 +242,8 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img
-                    src="./images/img_10.jpg"
+                  <img srcset="./images/img-7.jpg 1x, ./images/img@2x-7.jpg 2x" 
+                    src="./images/img-7.jpg"
                     alt="Instagram Stories"
                     width="360"
                   />
@@ -207,8 +264,8 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img
-                    src="./images/img_11.jpg"
+                  <img srcset="./images/img-8.jpg 1x, ./images/img@2x-8.jpg 2x" 
+                    src="./images/img-8.jpg"
                     alt="Organic food"
                     width="360"
                   />
@@ -229,8 +286,8 @@
             <li class="product-card">
               <a href="#">
                 <div class="image">
-                  <img
-                    src="./images/img_12.jpg"
+                  <img srcset="./images/img-9.jpg 1x, ./images/img@2x-9.jpg 2x" 
+                    src="./images/img_9.jpg"
                     alt="Fresh Coffee"
                     width="360"
                   />
@@ -252,9 +309,9 @@
         </div>
       </section>
     </main>
-    <footer class="footer">
+  <footer class="footer">
       <div class="container">
-        <div class="footer-main-text">
+        <div class="footer-main-text footer-element">
           <a href="./index.html" class="logo">
             Web<span class="logo-studio">Studio</span>
           </a>
@@ -263,7 +320,7 @@
             digital marketing & growth solutions.
           </p>
         </div>
-        <div class="social-footer">
+        <div class="social-footer footer-element">
           <span class="social-text-footer">Social media</span>
           <ul class="icon-style">
             <li class="footer-list-text">
@@ -295,18 +352,29 @@
               </a>
             </li>
           </ul>
-        </div>
-         <form class="footer-form">
-             <span class="social-text-footer">Subscribe</span>
-             <div class="input-button">
-             <input type="email" id="sub-mail" placeholder="E-mail" class="sub-input">
-             <button type="submit" class="sub-button">Subscribe
+              </div>
+
+        <form class="footer-form footer-element">
+          <span class="social-text-footer">Subscribe</span>
+          <div class="input-button">
+            <input
+            name="subscription"
+              type="email"
+              id="sub-mail"
+              placeholder="E-mail"
+              class="sub-input"
+            />
+            <button type="submit" class="sub-button">
+              Subscribe
               <svg class="send-icon" width="24px" height="24px">
-                  <use href="./images/sprite.svg#icon-Frame-3"></use>
-                </svg></button>
-             </div>
-          </form>
+                <use href="./images/sprite.svg#icon-Frame-3"></use>
+              </svg>
+            </button>
+          </div>
+        </form>
       </div>
     </footer>
+    <script src="./js/contact-menu.js"></script>
+    <script src="./js/mobile-menu.js"></script>
   </body>
 </html>
