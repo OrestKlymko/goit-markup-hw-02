@@ -147,7 +147,7 @@
                   <div class="form-field">
                     <label for="name">Name</label>
                     <div class="form-data">
-                      <input name="person" type="name" id="name" class="form-input-data"/>
+                      <input name="person" type="name" id="name" class="form-input-data" />
                       <svg class="form-image">
                         <use href="./images/sprite.svg#icon-person-black"></use>
                       </svg>
@@ -158,7 +158,7 @@
                     <label for="phone">Phone</label>
                     <div class="form-data">
                     <input name="phone" class="form-input-data" type="tel" id="phone" />
-                    <svg class="form-image">
+                    <svg class="form-image" id="phone">
                         <use href="./images/sprite.svg#icon-phone-black"></use>
                       </svg>
                     </div>
@@ -175,6 +175,7 @@
                   <div class="form-field">
                     <label for="comment">Comment</label>
                     <textarea
+                    class="text-input"
                       name="comment"
                       id="comment"
                       rows="6"
@@ -545,7 +546,7 @@
               placeholder="E-mail"
               class="sub-input"
             />
-            <button type="submit" class="sub-button">
+            <button type="submit" class="sub-button" id="sub-mail">
               Subscribe
               <svg class="send-icon" width="24px" height="24px">
                 <use href="./images/sprite.svg#icon-Frame-3"></use>
