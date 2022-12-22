@@ -724,14 +724,8 @@ body {
     cursor: pointer;
 }
 
-.company-link::hover {
-    
-    .company-list{
 
-    border: 1px solid var(--text-button-color);
 
-}
-}
 
 
 
@@ -826,7 +820,7 @@ margin-right: 0;
 }
 
 .team-card{
-    width: calc((100%-3*24px)/4);
+    width: calc((100% - 3 * 24px)/4);
     align-items: center;
     margin-right: 24px;
     height: 436px;
@@ -943,11 +937,34 @@ margin-left: auto;
 }
 
 .text-input{
-    padding-top: 8px;
+    padding-top: 16px;
     padding-left: 16px;
+
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+    font-weight: 400;
+
+    min-height: 120px;
 }
 
+.text-input::placeholder {
 
+    
+
+    padding-top: 0;
+    padding-left: 0;
+
+
+    font-family: 'Roboto', sans-serif;
+    font-size: 12px;
+    line-height: 1.167;
+    letter-spacing: 0.01em;
+
+    color: rgba(117, 117, 117, 0.5);
+}
 
 
 
@@ -1089,20 +1106,6 @@ margin-left: auto;
 }
 
 
-.text-input::placeholder{
-
-
-    padding-top: 0;
-    padding-left: 0;
-
-
-    font-family: 'Roboto',sans-serif;
-    font-size: 12px;
-    line-height: 1.167;
-    letter-spacing: 0.01em;
-    
-    color: rgba(117, 117, 117, 0.5);
-}
 
 
 
@@ -1161,6 +1164,15 @@ margin-left: auto;
 input:focus-visible{
     outline: none;
 }
+
+textarea:focus-visible{
+    outline: none;
+}
+
+.text-input:focus{
+border: 1px solid #4D5AE5;
+}
+
 
 .input-button{
     display: flex;
