@@ -111,11 +111,6 @@ padding-top:96px;
     padding-top: 0;
 }
 
-.hero-section{
-    padding-top: 192px;
-    padding-bottom: 192px;
-    
-}
 
 
 .container{
@@ -293,8 +288,9 @@ body {
     padding: 40px 32px 164px;
 
     background-color: var(--text-button-color);
-    width: 360px;
+    /* width: 360px; */
     height: 300px;
+    width: 100%;
 
      transform: translateY(100%);
 
@@ -768,10 +764,6 @@ body {
 
 }
 
-.footer .container{
-    padding-top: 100px;
-    padding-bottom: 100px;
-}
 
 
 .footer > .container{
@@ -1117,6 +1109,7 @@ margin-left: auto;
 
 .footer-form{
         margin-left: 80px;
+
         
         
         
@@ -1261,13 +1254,18 @@ textarea{
 
  @media screen and (max-width:767px) {
     .container{
-    width: 428px;
-    padding-left: 16px;
-    padding-right: 16px;
-    padding-top: 96px;
-    padding-bottom: 96px;
+    width: 100%;
+    padding: 0;
     }
     
+    .section{
+        padding-left: 16px;
+        padding-right: 16px;
+        padding-top: 96px;
+        padding-bottom: 96px;
+
+    }
+
     .modal{
         min-width: 392px;
         min-height: 579px;
@@ -1286,6 +1284,7 @@ textarea{
 
     .header{
         position: relative;
+        
     }
 
 
@@ -1360,7 +1359,6 @@ textarea{
 
     .mobile-container{
         width: 100%;
-        height: 100%;
         display: flex;
         justify-content: space-between;
         align-items: center;
@@ -1432,9 +1430,9 @@ textarea{
          display: none;
     }
 
-    .header .container{
-        width: 428px;
-        height: 70px;
+    .header {
+       padding: 24px 16px;
+       width: 100%;
     }
 
     .mobile-header.is-open{
@@ -1444,6 +1442,8 @@ textarea{
     .mobile-header{
         display: none;
     }
+
+  
 
     .nav-link.portfolio::after{
         display: none;
@@ -1463,7 +1463,16 @@ textarea{
         
             letter-spacing: 0.02em;
             text-transform: capitalize;
+
+            padding-bottom: 20px;
+            padding-top: 20px;
     }
+    
+    .nav-list:first-child{
+        margin-top: 60px;
+    }
+
+
 
     .nav{
         margin-bottom: 284px;
@@ -1486,21 +1495,19 @@ textarea{
     .header .container{
         display: flex;
         flex-wrap: wrap;
+        width: 100%;
     }
 
     .hero{
         width: 100%;
-        height: 432px;
+        height: 100%;
     }
 
     .hero-section{
         padding: 0;
     }
 
-    .hero-mobile{
-        padding-bottom: 109px;
-        padding-top: 112px;
-    }
+  
 
     .hero-name{
     margin-bottom: 80px;
@@ -1568,18 +1575,16 @@ textarea{
 
 
 
-    .our-advantages .container{
-        padding-bottom: 96px;
-        }
-
     .what-doing{
         display: none;
     }
 
     .team-list{
         display: flex;
-        flex-wrap: wrap;
+
+        flex-direction: column;
         justify-content: center;
+        align-items: center;
     }
 
     .team-card{
@@ -1607,7 +1612,7 @@ textarea{
     
     .company-list{
      
-        flex-basis: 190px;
+        flex-basis: calc((100% - 16px)/2);
         margin-right: 16px;
     }
 
@@ -1636,6 +1641,7 @@ textarea{
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding: 0;
        
     }
 
@@ -1720,9 +1726,10 @@ textarea{
 .filter{
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-
- 
+    margin-right: auto;
+    margin-left: auto;
+    justify-content: unset;
+    max-width: 360px;
 
 }
 
@@ -1746,6 +1753,11 @@ textarea{
 }
 
 
+
+
+
+
+
 .product-card:not(:last-child){
     margin-bottom: 48px;
 }
@@ -1760,9 +1772,6 @@ textarea{
     margin-right: 0;
 }
 
-
-
-
  }
 
 
@@ -1772,24 +1781,46 @@ textarea{
 
 @media screen and (min-width:768px) and (max-width:1199px) {
 
-
 .container {
-        width: 768px;
+        width: 100%;
+        padding: 0;
+    }
+
+    .section{
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 96px;
         padding-bottom: 96px;
     }
 
+    .footer{
+        padding-left: 108px;
+        padding-right: 108px;
+        
+    }
+
+
     .modal {
         min-width: 408px;
         min-height: 579px;
     }
 
+    
+    .header{
+    padding-left: 16px;
+    padding-right: 16px;
+               
+    }
+
   body .header .container {
         
         flex-wrap: nowrap;
-      
+        margin-left: 0;
+        margin-right: 0;
+        padding-left: 16px;
+        padding-right: 16px;
+        
+
         
     }
 
@@ -1847,10 +1878,6 @@ textarea{
         padding: 0;
     }
 
-    .hero-mobile {
-        padding-bottom: 112px;
-        padding-top: 112px;
-    }
 
     .hero-name {
         margin-bottom: 80px;
@@ -1882,7 +1909,7 @@ textarea{
 
 
     .advantage-card {
-        width: 356px;
+        flex-basis: calc((100% - 24px)/2);
         margin-right: 24px;
         margin-bottom: 72px;
     }
@@ -1891,9 +1918,6 @@ textarea{
         margin-right: 0;
     }
 
-    .our-advantages .container {
-        padding-bottom: 96px;
-    }
 
     .what-doing {
         display: none;
@@ -1906,9 +1930,10 @@ textarea{
     }
 
     .team-card {
-        width: 264px;
+        flex-basis: 264px;
         margin-bottom: 56px;
         margin-right: 24px;
+    
 
     }
 
@@ -1921,11 +1946,29 @@ textarea{
         margin-bottom: 0;
     }
 
-
-    .icon-style {
-        width: 100%;
+    .team.section{
+        padding-right: 108px;
+        padding-left: 108px;
     }
 
+
+    .image-work{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+    }
+    .icon-style {
+        width: 100%;
+        justify-content: center;
+    }
+
+
+
+    .cusotmers.section{
+        padding-right: 108px;
+        padding-left: 108px;
+    }
     .company {
         display: flex;
         flex-wrap: wrap;
@@ -1935,8 +1978,8 @@ textarea{
     }
 
     .company-list {
-        width: 190px;
-        margin-right: 16px;
+        width: calc((100% - 48px)/3);
+        margin-right: 24px;
     }
 
     .company-list {
@@ -1954,6 +1997,7 @@ textarea{
     .footer-form {
     margin-top: 72px;
     margin-left: 0;
+   
 
     }
 
@@ -1961,9 +2005,11 @@ textarea{
     .footer .container {
     display: flex;
     flex-wrap: wrap;
+    
+    }
 
-    margin-left: 108px;
-
+    .social-footer{
+       padding-right: 20px; 
     }
 
     .footer-main-text{
@@ -1979,12 +2025,18 @@ textarea{
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        
     }
 
 
-  
+  .product{
+   justify-content: flex-start;
+  }
+
+
 .product-card{
-    width: 350px;
+    /* width: 350px; */
+    /* width: calc((100% - 24px)/2); */
 }
 
     .product-card:not(:last-child) {
@@ -1996,11 +2048,43 @@ textarea{
         margin-right: 0;
     }
 
+
+
 }
 
 
 @media screen and (min-width:1200px) {
 
+    .header{
+        padding-left: 156px;
+        padding-right: 156px;
+        width: 100%;
+    }
+
+    .container {
+            width: 100%;
+            margin: 0;
+            padding: 0;
+        }
+
+
+    .section{
+
+            padding-left: 16px;
+            padding-right: 16px;
+            padding-top: 120px;
+            padding-bottom: 120px;
+        }
+
+        .footer.section{
+            width: 100%;
+
+        }
+
+    .hero.section{
+        padding-top: 196px;
+        padding-bottom: 196px;
+    }
 
     body .header .container {
     
@@ -2049,4 +2133,32 @@ textarea{
         .menu-button {
             display: none;
         }
+
+        .doing-card{
+            justify-content: center;
+        }
+
+        .team-list{
+            justify-content: center;
+        }
+
+        .team-card{
+          width: inherit;
+        }
+
+
+        .footer-main-text{
+            margin-right: 0;
+        }
+
+        .footer-form{
+            margin-left: 0;
+        }
+
+        .social-footer{
+            
+            padding-right: 80px;
+            padding-left: 120px;
+        }
     }
+
