@@ -8,7 +8,7 @@
     --border-card-collor:rgba(46, 47, 66, 0.08);
     --border-card-active:rgba(46, 47, 66, 0.16);
     --order-button-hover: #404BBF;
-    
+
 }
 
 
@@ -52,7 +52,7 @@ img{
 }
 .advantage-card:last-child{
     margin-right: 0;
-} 
+}
 
 .advantage{
     margin-bottom: 8px;
@@ -69,7 +69,7 @@ padding-top:96px;
 }
 
 .hero{
-  
+
     height: 603px;
     margin-left: auto;
     margin-right: auto;
@@ -83,10 +83,10 @@ padding-top:96px;
     max-width: 1600px;
 
 
-    
 
-    
-   
+
+
+
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -166,7 +166,7 @@ transform: translate(-50%, -50%) scale(0.9);
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%) scale(1);
-    
+
     transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
@@ -209,7 +209,7 @@ transform: translate(-50%, -50%) scale(0.9);
     background-color: var(--background-button-color);
     border-radius: 4px;
     height: 112px;
-    align-items: center; 
+    align-items: center;
     justify-content: center;
 
 }
@@ -232,18 +232,18 @@ height: 64px;
      border-radius: 50%;
 
      display: flex;
-     justify-content: center; 
-     align-items: center; 
+     justify-content: center;
+     align-items: center;
 
-   
+
  }
 
  .icon-list{
     margin-right: 24px;
  }
- 
+
 .icon-list:nth-child(4) {
-    margin-right: 0; 
+    margin-right: 0;
 }
 
 
@@ -304,10 +304,10 @@ body {
 
 
 
-/* Стилізація хедеру */ 
+/* Стилізація хедеру */
 .logo{
     color: var(--text-button-color);
-   
+
 
 
     font-family: 'Raleway', sans-serif;
@@ -387,7 +387,7 @@ body {
 .contact{
     display: flex;
     margin-left: auto;
-    
+
 
 
 }
@@ -409,7 +409,7 @@ body {
     display: flex;
     text-align: center;
     margin-left: 77px;
-    
+
 }
 
 .nav-list:not(:last-child){
@@ -516,7 +516,7 @@ body {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 
 
-    
+
 }
 
 
@@ -528,7 +528,7 @@ body {
     border-radius: 4px;
 
 
-    font-weight: 700;  
+    font-weight: 700;
     line-height: 1.5;
     letter-spacing: 0.04em;
     padding: 12px 24px;
@@ -540,7 +540,7 @@ body {
 
 
 .order-button{
-  
+
     background-color: var(--text-button-color);
     color: var(--background-color);
     border-radius: 4px;
@@ -551,7 +551,7 @@ body {
     font-weight: 700;
     line-height: 1.19;
     letter-spacing: 0.04em;
-    
+
     padding: 16px 32px;
 
 
@@ -563,7 +563,7 @@ body {
 
 .order-button:hover,
 .order-button:focus{
-   
+
     color: var(--background-color);
     background-color: var(--order-button-hover);
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -575,15 +575,15 @@ body {
 
     cursor: pointer;
 
-   
-    
+
+
 }
 
 /* Стилізація карточок */
 .topics,
 .advantage,
 .member{
-    color: var(--primary-text-color); 
+    color: var(--primary-text-color);
 
 
     font-weight: 700;
@@ -602,9 +602,9 @@ body {
     letter-spacing: 0.02em;
     text-align: center;
     margin-bottom: 72px;
-   
 
-    
+
+
 }
 
 .portfolio{
@@ -628,7 +628,7 @@ body {
     letter-spacing: 0.02em;
 
     cursor: pointer;
- 
+
 }
 
 .topics{
@@ -678,11 +678,11 @@ body {
 
 
 .footer{
-    
+
             background-color: var(--primary-text-color);
-    
-    
-    
+
+
+
 }
 
 
@@ -691,11 +691,11 @@ body {
 }
 
 .company-list{
-    display: flex; 
+    display: flex;
     width: calc((100% - 120px)/6);
     height: 88px;
     margin-right: 24px;
-    
+
 }
 .company-list:last-child{
     margin-right: 0;
@@ -709,7 +709,7 @@ body {
     height: 100%;
     border: 1px solid #8E8F99;
     border-radius: 4px;
- 
+
     fill: #8E8F99;
 
     transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1), border 250ms cubic-bezier(0.4, 0, 0.2, 1);
@@ -774,7 +774,7 @@ display: flex;
     line-height: 1.5;
     letter-spacing: 0.02em;
     color: var(--background-color);
-    
+
     display: block;
     padding-bottom: 16px;
 }
@@ -811,7 +811,7 @@ margin-right: 0;
 
 
 .team-list{
-   
+
     display: flex
 }
 
@@ -868,7 +868,7 @@ margin-right: 0;
 .team-card,
 .product-card{
     background-color: var(--background-color);
-    
+
 }
 
 .product{
@@ -879,14 +879,14 @@ margin-right: 0;
 
 .product-card{
     width: 360px;
-    margin-right: 24px; 
+    margin-right: 24px;
     margin-bottom: 48px;
     border: 0.5px solid var(--background-button-color);
     box-shadow: 0px 1px 6px var(--border-card-collor);
 
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
-  
+
 }
 
 .product-card:hover,
@@ -942,7 +942,7 @@ margin-left: auto;
 
 .text-input::placeholder {
 
-    
+
 
     padding-top: 0;
     padding-left: 0;
@@ -967,9 +967,9 @@ margin-left: auto;
         font-family: 'Roboto',sans-serif;
         font-size: 12px;
         line-height: 1.167;
-    
+
         letter-spacing: 0.01em;
-        
+
         color: #8E8F99;
 }
 
@@ -1015,13 +1015,13 @@ margin-left: auto;
 
     color: var(--background-color);
 
-    
+
     border: solid 1px transparent;
 }
 
 .button-submit{
     text-align: center;
-  
+
 }
 
 .form-field.checkbox{
@@ -1029,7 +1029,7 @@ margin-left: auto;
     flex-direction: row;
     color: #757575;
     font-size: 12px;
-    line-height: 1.3;    
+    line-height: 1.3;
     letter-spacing: 0.04em;
     margin-bottom: 0;
     align-items: center;
@@ -1041,7 +1041,7 @@ margin-left: auto;
     color: var(--text-button-color);
     height: 16px;
     text-decoration: underline;
-} 
+}
 
 .link-privacy:hover{
     text-decoration: none;
@@ -1062,7 +1062,7 @@ margin-left: auto;
 
 
 .icon-check{
-    
+
     width: 16px;
     height: 16px;
     margin-right: 8px;
@@ -1102,9 +1102,9 @@ margin-left: auto;
 .footer-form{
         margin-left: 80px;
 
-        
-        
-        
+
+
+
 }
 
 .sub-button{
@@ -1112,12 +1112,12 @@ margin-left: auto;
         min-width: 168px;
         min-height: 40px;
         cursor: pointer;
-    
+
         font-weight: 700;
         font-size: 16px;
         line-height: 1.5;
         letter-spacing: 0.06em;
-    
+
         color: var(--background-color);
         background: var(--text-button-color);
         border-radius: 4px;
@@ -1142,7 +1142,7 @@ margin-left: auto;
 
 
 .sub-input::placeholder{
-   
+
     background-color: transparent;
 
 }
@@ -1186,7 +1186,7 @@ border: 1px solid #4D5AE5;
 .form-data{
     position: relative;
 
-    
+
 }
 
 textarea{
@@ -1227,9 +1227,9 @@ textarea{
 
     font-size: 12px;
     line-height: 1.16;
-    
+
     letter-spacing: 0.01em;
-    
+
 
 
 }
@@ -1243,7 +1243,7 @@ textarea{
     justify-content: space-between;
     flex: 1;
     z-index: 3;
-    
+
 }
 
 /* MOBILE PHONE */
@@ -1404,6 +1404,8 @@ textarea{
        align-items: center;
        justify-content: center;
 
+
+
    }
 
    .menu-button[aria-expanded=true] .burger {
@@ -1437,7 +1439,7 @@ textarea{
        display: block;
    }
 
- 
+
 
    .mobile-header {
        display: none;
@@ -1775,7 +1777,7 @@ textarea{
     width: 428px;
     padding: 0;
     }
-    
+
     .section{
         padding-left: 16px;
         padding-right: 16px;
@@ -1816,16 +1818,16 @@ textarea{
 
     }
 
-  
+
 
     .mobile-header .icon-style{
         padding-bottom: 40px;
         padding-top: 28px;
 
         justify-content: flex-start;
-        
 
-       
+
+
     }
 
     .mobile-header .icon-list:last-child{
@@ -1835,21 +1837,21 @@ textarea{
     .mobile-header  .icon-list{
         margin-right: 56px;
     }
- 
+
 
     .contact{
         display: none;
     }
 
 
-    
+
     .contact-link-mobile.active-phone{
         font-size: 36px;
         line-height: 1.11;
         display: block;
         padding-top: 20px;
-            
-            
+
+
         text-transform: capitalize;
         color: var(--text-button-color);
     }
@@ -1857,13 +1859,13 @@ textarea{
     .contact-link-mobile{
         font-size: 20px;
         line-height: 1.2;
-        
+
         letter-spacing: 0.02em;
-        
+
         padding-top: 20px;
         padding-bottom: 20px;
-        
-        
+
+
         color:var(--description-text-color);
     }
 
@@ -1882,7 +1884,7 @@ textarea{
 
     }
 
-   
+
 
     .menu-button{
         background-color: transparent;
@@ -1890,39 +1892,43 @@ textarea{
         padding: 2px;
         z-index: 1000;
 
-   
+
 
         display: flex;
         justify-content: center;
         align-items: center;
 
-     
-        
+
+        right: 16px;
+
     }
+
+
 
 
     .menu-button[aria-expanded=true] .icon-cross {
         display: block;
-        
+
 
     }
     .menu-button[aria-expanded=true] {
-          
+
                 border: 1px solid rgba(0, 0, 0, 0.1);
                 background-color: var(--border-collor);
-                
+
 
                 display: flex;
                 width: 24px;
                 height: 24px;
 
-                border-radius: 50%;                    
+                border-radius: 50%;
                 cursor: pointer;
-                    
-                    
+
+
                 align-items: center;
                 justify-content: center;
-                
+                position: fixed;
+
             }
    .menu-button[aria-expanded=true] .burger{
         width: 8px;
@@ -1930,8 +1936,8 @@ textarea{
     .menu-button[aria-expanded=false] .burger {
         width: 32px;
     }
-    
-         
+
+
 
    .menu-button[aria-expanded=true] .icon-burger {
         display: none;
@@ -1957,7 +1963,7 @@ textarea{
         display: none;
     }
 
-  
+
 
     .nav-link.portfolio::after{
         display: none;
@@ -1969,19 +1975,19 @@ textarea{
 
     .nav-link{
             text-align: start;
-    
+
             font-weight: 600;
             font-size: 36px;
             line-height: 1.11;
 
-        
+
             letter-spacing: 0.02em;
             text-transform: capitalize;
 
             padding-bottom: 20px;
             padding-top: 20px;
     }
-    
+
     .nav-list:first-child{
         margin-top: 60px;
     }
@@ -2014,7 +2020,7 @@ textarea{
         padding: 0;
     }
 
-  
+
 
     .hero-name{
     margin-bottom: 80px;
@@ -2022,7 +2028,7 @@ textarea{
     font-weight: 700;
     font-size: 36px;
     line-height: 1.11;
-        
+
     text-align: center;
     letter-spacing: 0.02em;
     }
@@ -2034,7 +2040,7 @@ textarea{
     .advantage-list{
         display: flex;
         flex-wrap: wrap;
-       
+
 
     }
 
@@ -2045,18 +2051,18 @@ textarea{
         font-weight: 600;
         font-size: 36px;
         line-height: 1.11;
-        
+
         letter-spacing: 0.02em;
         text-transform: capitalize;
-        
-        
+
+
     }
 
     .advantage{
         margin-top: 0;
         text-align: center;
     }
-    
+
     .advantage-card{
         width: 100%;
         margin-right: auto;
@@ -2071,12 +2077,12 @@ textarea{
 
     .advantage-descrip{
         display: block;
-   
+
         font-weight: 600;
         font-size: 16px;
         line-height: 1.5;
 
-        
+
         letter-spacing: 0.02em;
     }
 
@@ -2095,11 +2101,11 @@ textarea{
     }
 
     .team-card{
-        width: 260px; 
+        width: 260px;
         margin-bottom: 72px;
         margin-right: 0;
     }
-    
+
     .team-card:last-child{
         margin-bottom: 0;
     }
@@ -2108,17 +2114,17 @@ textarea{
     .icon-style{
         width: 100%;
     }
-   
+
     .company{
         display: flex;
         flex-wrap: wrap;
         width: 100%;
-       
+
     }
 
-    
+
     .company-list{
-     
+
         flex-basis: calc((100% - 16px)/2);
         margin-right: 16px;
     }
@@ -2149,13 +2155,13 @@ textarea{
         flex-direction: column;
         align-items: center;
         padding: 0;
-       
+
     }
 
     .footer .logo{
         justify-content: center;
     }
-    
+
 
     .footer-main-text{
         margin-right: 0;
@@ -2166,7 +2172,7 @@ textarea{
     }
 
     .footer-element{
-        width: 100%;      
+        width: 100%;
     }
 
     .footer-text{
@@ -2174,7 +2180,7 @@ textarea{
         width: 100%;
         padding-left: 80px;
         padding-right: 80px;
-        
+
     }
 
     .input-button{
@@ -2203,7 +2209,7 @@ textarea{
         text-align: center;
         align-items: center;
 
-    
+
 
     }
 
@@ -2219,7 +2225,7 @@ textarea{
         font-weight: 600;
         font-size: 36px;
         line-height: 1.11;
-        
+
         text-align: center;
         letter-spacing: 0.02em;
         text-transform: capitalize;
@@ -2294,7 +2300,7 @@ textarea{
     }
 
     .section{
-        
+
         padding-left: 16px;
         padding-right: 16px;
         padding-top: 96px;
@@ -2304,7 +2310,7 @@ textarea{
     .footer{
         padding-left: 108px;
         padding-right: 108px;
-        
+
     }
 
 
@@ -2313,16 +2319,16 @@ textarea{
         min-height: 579px;
     }
 
-    
+
     .header{
-    
+
     padding-left: 16px;
     padding-right: 16px;
-    
+
     }
 
   body .header .container {
-     
+
         flex-wrap: nowrap;
         margin-left: 0;
         margin-right: 0;
@@ -2331,7 +2337,7 @@ textarea{
 
     .nav{
         margin-left: 0;
-        
+
     }
 
     .navigation{
@@ -2343,7 +2349,7 @@ textarea{
         flex-direction: column;
         justify-content: center;
         margin-left: auto;
-      
+
     }
 
     .contact .contact-list{
@@ -2450,20 +2456,20 @@ textarea{
         flex-basis: 264px;
         margin-bottom: 56px;
         margin-right: 24px;
-    
+
 
     }
 
     .team-card:nth-child(2n) {
         margin-right: 0;
-        
+
     }
 
     .team-card:nth-last-child(-n+2){
         margin-bottom: 0;
     }
 
-  
+
 
 
     .image-work{
@@ -2482,7 +2488,7 @@ textarea{
     .cusotmers.section{
         padding-right: 108px;
         padding-left: 108px;
-        
+
     }
 
     .cusotmers .container{
@@ -2519,7 +2525,7 @@ textarea{
     .footer-form {
     margin-top: 72px;
     margin-left: 0;
-   
+
 
     }
 
@@ -2528,11 +2534,11 @@ textarea{
     display: flex;
     flex-wrap: wrap;
     width: 100%;
-    
+
     }
 
     .social-footer{
-       padding-right: 20px; 
+       padding-right: 20px;
     }
 
     .footer-main-text{
@@ -2541,14 +2547,14 @@ textarea{
 
 
 
-  
+
     /* Portfolio */
 
     .filter {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-        
+
     }
 
 
@@ -2604,49 +2610,49 @@ textarea{
     }
 
     body .header .container {
-    
+
             flex-wrap: nowrap;
-    
-    
+
+
         }
-    
+
         .nav {
             margin-left: 0;
         }
-    
+
         .navigation {
             margin-left: 124px;
         }
-    
+
         .contact {
             display: flex;
-            margin-left: auto; 
+            margin-left: auto;
             justify-content: center;
             align-items: center;
         }
-    
+
         .contact .contact-list:not(:last-child) {
             margin-right: 40px;
         }
-    
+
         .contact-list:last-child {
             margin-bottom: 0px;
         }
-    
-    
-    
+
+
+
         .header .container {
             display: flex;
             flex-wrap: wrap;
         }
-    
-    
-    
-    
+
+
+
+
         .contact-page.mobile {
             display: none;
         }
-    
+
         .menu-button {
             display: none;
         }
@@ -2673,7 +2679,7 @@ textarea{
         }
 
         .social-footer{
-            
+
             padding-right: 80px;
             padding-left: 120px;
         }
